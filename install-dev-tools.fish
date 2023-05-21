@@ -24,9 +24,11 @@ fisher install jorgebucaran/fisher \
     jorgebucaran/getopts.fish \
     nickeb96/puffer-fish \
     gazorby/fish-abbreviation-tips \
-    ilancosman/tide@v5 \
     fabioantunes/base16-fish-shell \
     acomagu/fish-async-prompt
+rm /root/.config/fish/functions/fish_mode_prompt.fish
+rm /root/.config/fish/functions/fish_prompt.fish
+fisher install ilancosman/tide@v5
 
 set_color green
 echo "********* Updating permissions on /workspace *********"
