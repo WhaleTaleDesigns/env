@@ -48,7 +48,7 @@
       ]
     }
   },
-  "workspaceMount": "source=workspace-volume,target=/workspace,type=volume",
+  "workspaceMount": "source=whaletaledesigns-workspace-volume,target=/workspace,type=volume",
   "workspaceFolder": "/workspace",
   "remoteUser": "root"
 }
