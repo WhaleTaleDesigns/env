@@ -28,7 +28,7 @@ fisher install jorgebucaran/fisher \
     acomagu/fish-async-prompt
 rm /root/.config/fish/functions/fish_mode_prompt.fish
 rm /root/.config/fish/functions/fish_prompt.fish
-fisher install ilancosman/tide@v5
+fisher install ilancosman/tide
 
 set_color green
 echo "********* Updating permissions on /workspace *********"
