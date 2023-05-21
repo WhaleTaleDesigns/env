@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-  "name": "Node.js & TypeScript",
+  "name": "WhaleTaleDesigns/env",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
 
@@ -9,7 +9,7 @@
   "forwardPorts": [3000],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "git config --global credential.helper manager-core && chmod 777 /workspace && git clone https://github.com/WhaleTaleDesigns/app.git /workspace && cd /workspace/app && fish /workspace/app/.devcontainer/install-dev-tools.fish",
+  "postCreateCommand": "cd /tmp && curl -O https://raw.githubusercontent.com/WhaleTaleDesigns/env/main/install-dev-tools.fish && fish install-dev-tools.fish",
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/devcontainers-contrib/features/pnpm:2": {
