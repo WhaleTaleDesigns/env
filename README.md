@@ -4,7 +4,7 @@ Development environmnet setup for working with WhaleTaleDesigns projects.
 
 ## What's next? How do I make an app with this?
 
-- Install [VSCode](https://code.visualstudio.com/) and the [Dev Containers](vscode:extension/ms-vscode-remote.remote-containers) extension.
+- Install [VSCode](https://code.visualstudio.com/) and the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 - Clone this project and then open it VSCode.
 - Install [Docker](https://www.docker.com) if you haven't already.
 - Open the project in a dev container:
