@@ -1,6 +1,6 @@
 # @WhaleTaleDesigns/env
 
-Development environmnet setup for working at WhaleTaleDesigns.
+Development environmnet setup for working with WhaleTaleDesigns projects.
 
 ## What's next? How do I make an app with this?
 
