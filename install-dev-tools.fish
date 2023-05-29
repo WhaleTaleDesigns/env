@@ -27,7 +27,7 @@ rm /home/node/.config/fish/functions/fish_prompt.fish
 fisher install ilancosman/tide@v5
 
 print green "Updating permissions on /workspace"
-chmod 777 /workspace
+chown node /workspace
 
 print green "Generating a new SSH GitHub key"
 mkdir -p -- ~/.ssh
