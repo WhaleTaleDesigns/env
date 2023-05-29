@@ -8,31 +8,23 @@ function print
     set_color normal
 end
 
-print green "Installing commitizen"
-pip install --user -U Commitizen
-
 print green "Aliasing pnpm as npm"
 alias --save npm="pnpm"
 
 print green "Installing fish plugins"
 fisher install jorgebucaran/fisher \
-    edc/bass \
-    jorgebucaran/hydro \
-    jethrokuan/z \
-    jorgebucaran/nvm.fish \
-    franciscolourenco/done \
-    jorgebucaran/replay.fish \
-    jorgebucaran/spark.fish \
-    meaningful-ooo/sponge \
-    jorgebucaran/autopair.fish \
-    jorgebucaran/getopts.fish \
-    nickeb96/puffer-fish \
-    gazorby/fish-abbreviation-tips \
-    fabioantunes/base16-fish-shell \
-    acomagu/fish-async-prompt
-rm /root/.config/fish/functions/fish_mode_prompt.fish
-rm /root/.config/fish/functions/fish_prompt.fish
-fisher install ilancosman/tide
+edc/bass \
+jorgebucaran/hydro \
+jorgebucaran/nvm.fish \
+franciscolourenco/done \
+jorgebucaran/replay.fish \
+meaningful-ooo/sponge \
+jorgebucaran/autopair.fish \
+jorgebucaran/getopts.fish \
+nickeb96/puffer-fish
+rm /home/node/.config/fish/functions/fish_mode_prompt.fish
+rm /home/node/.config/fish/functions/fish_prompt.fish
+fisher install ilancosman/tide@v5
 
 print green "Updating permissions on /workspace"
 chmod 777 /workspace
